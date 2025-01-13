@@ -7,30 +7,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="min-h-screen flex flex-col bg-purple-50">
-    <header class="bg-white shadow-sm">
-        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-            <div class="flex items-center">
-                <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                    WIA
-                </div>
-                <h1 class="ml-4 text-2xl font-bold text-purple-800">Women in Action Rising</h1>
-            </div>
-            <nav>
-                <ul class="flex space-x-6">
-                    <li><a href="index.html" class="text-purple-700 hover:text-purple-900">Home</a></li>
-                    <li><a href="about.html" class="text-purple-700 hover:text-purple-900">About</a></li>
-                    <li><a href="programs.html" class="text-purple-700 hover:text-purple-900">Programs</a></li>
-                    <li><a href="blogs.html" class="text-purple-700 hover:text-purple-900">Blog</a></li>
-                    <li><a href="#" class="text-purple-700 hover:text-purple-900">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+
+    <div id="header" class="sticky top-0 z-50"></div>
 
     <main class="flex-grow">
-        <section class="bg-purple-700 text-white py-20">
+        <section  class="relative bg-[url('images/mission2.jpg')] bg-cover bg-center text-white py-20 min-h-[400px]">
+            <div class="absolute inset-0 bg-purple-600 bg-opacity-30"></div>
             <div class="container mx-auto px-4">
-                <div class="max-w-3xl mx-auto text-center">
+                <div class="max-w-3xl mx-auto text-center transform">
                     <h2 class="text-4xl font-bold mb-6">Our Blog</h2>
                     <p class="text-xl mb-8">Insights, stories, and updates from Women in Action Rising</p>
                 </div>
@@ -41,25 +25,25 @@
             <div class="container mx-auto px-4 md:px-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="bg-white p-6 rounded-lg shadow-md">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Blog Post 1" class="w-full h-48 object-cover rounded-md mb-4" />
+                        <img src="images/Donation.jpg" alt="Blog Post 1" class="w-full h-48 object-cover rounded-md mb-4" />
                         <h3 class="text-xl font-bold text-purple-800 mb-2">Empowering Women in Tech: Our Latest Initiative</h3>
                         <p class="text-gray-600 mb-4">Learn about our new program aimed at increasing women's participation in the tech industry.</p>
                         <a href="Blog-details.html" class="text-purple-600 hover:text-purple-800 font-semibold">Read More &rarr;</a>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-md">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Blog Post 2" class="w-full h-48 object-cover rounded-md mb-4" />
+                        <img src="images/impact.jpg" alt="Blog Post 2" class="w-full h-48 object-cover rounded-md mb-4" />
                         <h3 class="text-xl font-bold text-purple-800 mb-2">Success Story: From Trainee to Entrepreneur</h3>
                         <p class="text-gray-600 mb-4">Read about how one of our program graduates started her own successful business.</p>
                         <a href="Blog-details.html" class="text-purple-600 hover:text-purple-800 font-semibold">Read More &rarr;</a>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-md">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Blog Post 3" class="w-full h-48 object-cover rounded-md mb-4" />
+                        <img src="images/mission2.jpg" alt="Blog Post 3" class="w-full h-48 object-cover rounded-md mb-4" />
                         <h3 class="text-xl font-bold text-purple-800 mb-2">The Importance of Financial Literacy for Women</h3>
                         <p class="text-gray-600 mb-4">Discover why we've made financial education a key part of our programs.</p>
                         <a href="Blog-details.html" class="text-purple-600 hover:text-purple-800 font-semibold">Read More &rarr;</a>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-md">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Blog Post 4" class="w-full h-48 object-cover rounded-md mb-4" />
+                        <img src="images/about-us.jpg" alt="Blog Post 4" class="w-full h-48 object-cover rounded-md mb-4" />
                         <h3 class="text-xl font-bold text-purple-800 mb-2">Celebrating International Women's Day</h3>
                         <p class="text-gray-600 mb-4">A recap of our events and activities for this year's International Women's Day.</p>
                         <a href="Blog-details.html" class="text-purple-600 hover:text-purple-800 font-semibold">Read More &rarr;</a>
