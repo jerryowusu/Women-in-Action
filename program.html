@@ -8,30 +8,66 @@
 </head>
 <body class="bg-gray-50 font-sans">
   
-    <div id="header"></div>
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                    WIA
+                </div>
+                <h1 class="ml-4 text-2xl font-bold text-purple-800">Women in Action</h1>
+            </div>
+    
+            <button id="menu-toggle" class="md:hidden text-purple-700 hover:text-purple-900 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+    
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-purple-700 hover:text-purple-900">Home</a>
+                <a href="about.html" class="text-purple-700 hover:text-purple-900">About</a>
+                <a href="program.html" class="text-purple-700 hover:text-purple-900">Programs</a>
+                <a href="blogs.html" class="text-purple-700 hover:text-purple-900">Blogs</a>
+                <a href="events.html" class="text-purple-700 hover:text-purple-900">Events</a>
+                <a href="contact.html" class="text-purple-700 hover:text-purple-900">Contact</a>
+            </nav>
+        </div>
+    
+        <div id="mobile-menu" class="absolute min-h-screen top-full left-0 w-full bg-purple-600 text-white hidden flex-col items-center space-y-4 py-6 shadow-md md:hidden">
+            <a href="index.html" class="text-lg hover:text-gray-200">Home</a>
+            <a href="about.html" class="text-lg hover:text-gray-200">About</a>
+            <a href="program.html" class="text-lg hover:text-gray-200">Programs</a>
+            <a href="blogs.html" class="text-lg hover:text-gray-200">Blogs</a>
+            <a href="events.html" class="text-lg hover:text-gray-200">Events</a>
+            <a href="contact.html" class="text-lg hover:text-gray-200">Contact</a>
+        </div>
+    </header>
 
-    <div class="sidebar fixed top-10% z-0 left-0 h-full w-64 bg-purple-700 py-6 px-4 hidden md:block">
-        <a href="#vocational" class="block py-3 px-4 text-white text-xl font-semibold mb-6 hover:bg-purple-600 rounded-md transition duration-300">Vocational Training</a>
-        <a href="#mentorship" class="block py-3 px-4 text-white text-xl font-semibold mb-6 hover:bg-purple-600 rounded-md transition duration-300">Mentorship</a>
-        <a href="#monitoring" class="block py-3 px-4 text-white text-xl font-semibold mb-6 hover:bg-purple-600 rounded-md transition duration-300">Monitoring & Support</a>
-    </div>
+    <div >
 
-    <div class="md:ml-64 px-6 py-10">
-
-        <section class="relative h-screen bg-cover bg-center" style="background-image: url('images/about-us.jpg');">
-            <div class="absolute inset-0 bg-purple-700 opacity-40"></div>
-            <div class="text-center text-white relative z-10 py-40">
-                <h1 class="text-5xl font-bold leading-tight mb-4">Empowering Women, Transforming Communities</h1>
-                <p class="text-lg mb-6">Join us in creating a brighter future for women and girls across Ghana.</p>
-                <a href="#vocational" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-full text-lg transition duration-300">Get Involved</a>
+        <section class="relative bg-[url('images/about-us.jpg')] bg-cover bg-center text-white py-20 min-h-[450px]">
+            <div class="absolute inset-0 bg-purple-900 bg-opacity-50"></div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-3xl mx-auto text-center flex flex-col gap-10">
+                    <div>
+                        <h2 class="text-4xl font-bold mb-6"> Empowering Women, Transforming Communities</h2>
+                        <p class="text-xl mb-8"> Join us in creating a brighter future for women and girls across Ghana.</p>
+                    </div>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#vocational" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 sm:py-3 sm:px-6 rounded-full text-sm 
+                            sm:text-base md:text-lg transition duration-300">
+                                Get Involved
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="vocational" class="py-16">
+        <section id="vocational" class="container mx-auto px-4 py-16">
             <h2 class="text-4xl font-bold text-transparent bg-gradient-to-r from-purple-700 to-purple-500 bg-clip-text text-center mb-12">
                 Vocational Training
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 px-4 ">
                 <div class="text-lg text-gray-800 leading-relaxed">
                     <p>Our vocational training programs equip women with marketable skills in various sectors such as technology, health, education, and the arts. These hands-on, practical courses are designed to help women gain real-world experience and certifications that will enable them to achieve financial independence and leadership roles in their communities.</p>
                     <p class="mt-4">We provide specialized training in:
@@ -49,11 +85,11 @@
             </div>
         </section>
 
-        <section id="mentorship" class="py-16 bg-gray-100">
+        <section id="mentorship" class="container mx-auto px-4 bg-gray-100 py-16"">
             <h2 class="text-4xl font-bold text-transparent bg-gradient-to-r from-purple-700 to-purple-500 bg-clip-text text-center mb-12">
                 Mentorship
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 px-4 py-16"">
                 <div class="text-lg text-gray-800 leading-relaxed">
                     <p>Our mentorship program connects women with successful professionals from various fields. Through one-on-one mentorship, participants gain valuable insights into career paths, goal setting, and leadership skills. Mentors provide support, guidance, and encouragement to help women achieve their personal and professional aspirations.</p>
                     <p class="mt-4">Mentorship benefits include:
@@ -65,13 +101,13 @@
                         </ul>
                     </p>
                 </div>
-                <div class="relative">
+                <div class="relative max-w-4xl">
                     <img src="images/about-us.jpg" alt="Mentorship Program" class="rounded-xl shadow-lg max-w-full transform hover:scale-105 transition duration-300">
                 </div>
             </div>
         </section>
 
-        <section id="monitoring" class="py-16">
+        <section id="monitoring" class="container mx-auto px-4 py-16">
             <h2 class="text-4xl font-bold text-transparent bg-gradient-to-r from-purple-700 to-purple-500 bg-clip-text text-center mb-12">
                 Monitoring & Support
             </h2>
@@ -87,8 +123,8 @@
                         </ul>
                     </p>
                 </div>
-                <div class="relative">
-                    <img src="images/kofi.webp" alt="Monitoring and Support" class="rounded-xl shadow-lg max-w-full transform hover:scale-105 transition duration-300">
+                <div class="relative max-w-4xl mx-auto">
+                    <img src="images/impact.jpg" alt="Monitoring and Support" class="rounded-xl shadow-lg max-w-full transform hover:scale-105 transition duration-300" style="aspect-ratio: 16 / 9;">
                 </div>
             </div>
         </section>
